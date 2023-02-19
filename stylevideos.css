@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color:#EEE9DA!important;
+}
+
+nav{
+    background-color: #BDCDD6;
+}
+@font-face {
+    font-family:'hello';
+    src: url(SweetHipster-PzlE.ttf);
+}
+
+
+nav .navbar-brand{
+    font-family: 'hello';
+    font-size: 45px;
+    color: rgb(24, 24, 24);
+}
+
+nav .nav-link{
+    font-size: 20px;
+}
+
+.nav-item:hover{
+    font-size: 20px;
+    color:#6096B4;
+    border-bottom: 2px #6096B4 solid ;
+}
+
+.title{
+    border-left: 4px #6096B4 solid;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+.first_row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.second_row{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.carte p{
+    width: 350px;
+}
+
+.carte{
+    background-color:aliceblue;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: -19px -9px 196px -90px rgba(0,0,0,0.81);
+-webkit-box-shadow: -19px -9px 196px -90px rgba(0,0,0,0.81);
+-moz-box-shadow: -19px -9px 196px -90px rgba(0,0,0,0.81);
+}
+
+footer svg{
+    width: 40px;
+    height: 40px;
+}
+
+footer{
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    margin-right: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:1143px) {
+    .first_row{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .second_row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .carte{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carte:not(#third){
+        margin-bottom: 20px;
+    }
+
+    footer{
+        justify-content: center;
+    }
+}
